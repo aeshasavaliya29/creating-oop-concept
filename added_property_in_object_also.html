@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>added property in object also</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<!-- added property in object also create function using new keyword -->
+
+<script>
+     function Person(firstName, lastName) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+     }
+
+     var person = new Person("Aesha", "Savaliya");
+
+     person.age = 19;
+
+     console.log(person.firstName);
+     document.write("<br>",person.firstName);
+     console.log(person.lastName);
+     document.write("<br>",person.lastName);
+     console.log(person.age);
+     document.write("<br>",person.age);
+
+</script>

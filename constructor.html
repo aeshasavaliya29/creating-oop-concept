@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>constructor</title>
+</head>
+
+<body>
+
+</body>
+</html>
+
+
+<!-- Create a function using constructor -->
+
+<script>
+     function Person(name, age, occupation) {
+          this.name = name;
+          this.age = age;
+          this.occupation = occupation;
+
+          this.sayHello = function () {
+               console.log("Hello, my name is " + this.name);
+               document.write("<br>","Hello, my name is " + this.name);
+          };
+     }
+
+     var person1 = new Person("Aesha", 19, "IT developer ");
+     var person2 = new Person("Pavan", 19, "IT designer");
+
+     console.log(person1.name); 
+     document.write("<br>",person1.name); 
+     console.log(person2.age); 
+     document.write("<br>",person2.age); 
+
+     person1.sayHello(); 
+     person2.sayHello(); 
+
+</script>

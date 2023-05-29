@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>this_method</title>
+</head>
+
+<body>
+
+</body>
+</html>
+
+<!-- Create a function using  this method -->
+
+<script>
+     function Car(brand, model, year) {
+          this.brand = brand;
+          this.model = model;
+          this.year = year;
+
+          this.start = function () {
+               console.log("Starting the " + this.brand + " " + this.model);
+               document.write("<br>","Starting the " + this.brand + " " + this.model);
+          };
+
+          this.stop = function () {
+               console.log("Stopping the " + this.brand + " " + this.model);
+               document.write("<br>","Stopping the " + this.brand + " " + this.model);
+          };
+     }
+
+     var myCar = new Car("Aodi", "2023 Audi A6", 2020);
+     var myCars = new Car("fortuner", "Fortuner Legender", 2021);
+
+     console.log(myCar.brand); 
+     document.write("<br>",myCar.brand); 
+     console.log(myCar.year);
+     document.write("<br>",myCar.year)
+
+     myCar.start();
+     myCars.stop();
+
+</script>
